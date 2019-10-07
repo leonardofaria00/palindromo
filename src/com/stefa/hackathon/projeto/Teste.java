@@ -1,16 +1,19 @@
 package com.stefa.hackathon.projeto;
 
+import com.stefa.hackathon.projeto.controller.PalindromoController;
+
 public class Teste {
 
 	public static void main(String[] a) {
 		String palavra = "amoreroma";
+//		String palavra = "11211";
+//		String palavra = "ana";
+//		String palavra = "leonardo";
 
-		PalindromoController string = new PalindromoController();
+		PalindromoController palindromo = new PalindromoController();
 
-		String verifica = string.verificaPalindromo(palavra);
-		System.out.println(palavra + " " + verifica);
+		System.out.println(palavra + ": " + palindromo.verificaPalindromo(palavra));
 
-		String verifica2 = string.verificaPalindromo2(palavra);
-		System.out.println(palavra + " " + verifica2);
+//		System.out.println(palavra + ": " + palindromo.verificaPalindromo2(palavra));
 	}
 }

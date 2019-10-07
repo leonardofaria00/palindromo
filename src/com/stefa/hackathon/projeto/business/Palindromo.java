@@ -1,11 +1,11 @@
-package com.stefa.hackathon.projeto;
+package com.stefa.hackathon.projeto.business;
 
 public class Palindromo {
 
 	/*
 	 * Método com charAt
 	 */
-	public boolean ePalindromo(String palavra) {
+	public boolean ePalindromo2(String palavra) {
 
 		int meio = palavra.length() / 2;
 
@@ -19,7 +19,7 @@ public class Palindromo {
 	/*
 	 * Método com StringBuilder
 	 */
-	public boolean ePalindromo2(String palavra) {
+	public boolean ePalindromo(String palavra) {
 		return palavra.equals(new StringBuilder(palavra).reverse().toString());
 	}
 }
