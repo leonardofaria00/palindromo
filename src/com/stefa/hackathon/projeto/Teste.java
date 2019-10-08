@@ -1,19 +1,18 @@
 package com.stefa.hackathon.projeto;
 
+import javax.swing.JOptionPane;
+
 import com.stefa.hackathon.projeto.controller.PalindromoController;
 
 public class Teste {
 
 	public static void main(String[] a) {
-		String palavra = "amoreroma";
-//		String palavra = "11211";
-//		String palavra = "ana";
-//		String palavra = "leonardo";
 
-		PalindromoController palindromo = new PalindromoController();
+		String palavra = JOptionPane.showInputDialog("Informe a palara:");
 
-		System.out.println(palavra + ": " + palindromo.verificaPalindromo(palavra));
+		String palindromo = new PalindromoController().verificaPalindromo2(palavra);
 
-//		System.out.println(palavra + ": " + palindromo.verificaPalindromo2(palavra));
+		JOptionPane.showMessageDialog(null, palavra + ": " + palindromo);
+
 	}
 }
